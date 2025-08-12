@@ -1,9 +1,10 @@
+//Variaveis
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 
 
-// Serve para selecionar elementos do DOM e alterar seu conteúdo
+// Selecionar elementos do DOM e alterar seu conteúdo
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag)
     campo.innerHTML = texto;
@@ -63,4 +64,5 @@ function reiniciarJogo() {
     tentativas = 1;
     exibirMensagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled', true);
+
 }
